@@ -59,8 +59,7 @@ public class MainActivity extends Activity {
     public void showAlert(final View v) {
 
         AlertDialog.Builder adb = new AlertDialog.Builder(this);
-        LayoutInflater inflater = this.getLayoutInflater();
-        View dialogview = inflater.inflate(R.layout.layout_custom_dialog, null);
+        LayoutInflater inflater = this.getLayoutInflater();View dialogview = inflater.inflate(R.layout.layout_custom_dialog, null);
         adb.setView(dialogview);
         final EditText editText = (EditText)findViewById(v.getId());
 
@@ -166,7 +165,7 @@ public class MainActivity extends Activity {
             }
 
         });
-        // создаем диалог
+        // создаем LLиалог
         AlertDialog alertDialog = adb.create();
         alertDialog.show();
     }
